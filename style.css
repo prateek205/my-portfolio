@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: montserrat-font;
+    src: url("fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+:root{
+    font:montserrat-font;
+    
+}
