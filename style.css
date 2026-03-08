@@ -13,12 +13,19 @@
 
 /* global root for all properties */
 :root {
+  /* font-family */
   --font: montserrat-font;
+  /* borders and border-radius */
+  --border: 1px solid black;
+  /* background-color and color pallete */
+  --primary-color: ;
+  /* font-sizes */ 
+  --heading-size: ;
 }
 
 /* main container */
 .mainContainer {
-  /* border: 1px solid black; */
+  border: var(--border);
   width: 100%;
   height: 100vh;
   font-family: var(--font);
@@ -26,7 +33,7 @@
 
 /* headerSection */
 .navBar {
-  /* border: 1px solid black; */
+  border: var(--border);
   width: 95%;
   margin: auto;
   height: 10vh;
