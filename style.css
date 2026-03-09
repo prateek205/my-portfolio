@@ -18,9 +18,25 @@
   /* borders and border-radius */
   --border: 1px solid black;
   /* background-color and color pallete */
-  --primary-color: ;
-  /* font-sizes */ 
-  --heading-size: ;
+  --bg-color: #0f1729;
+  --card-bg: #1e293b;
+  --primary-color: #3b82f6;
+  --hover-color: #2563eb;
+  --text-color: #ffffff;
+  --para-text: #94a3b8;
+  --border-color: #334155;
+  /* font-sizes */
+  --navbar-logo: 24px;
+  --navbar-link: 16px;
+  --hero-title: 48px;
+  --hero-subtitle: 26px;
+  --hero-desc: 18px;
+  --button: 16px;
+  --section-title: 36px;
+  --project-title: 22px;
+  --card-text: 16px;
+  --small-text: 14px;
+  --footer-text: 14px;
 }
 
 /* main container */
