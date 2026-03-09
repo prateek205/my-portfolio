@@ -30,7 +30,7 @@
       </header>
       <!-- hero-section -->
       <div class="heroContainer">
-        <div class="heroSlider">
+        <div class="heroSlider" id="slides">
           <div class="heroSlide">
             <img src="assets/hero-banner-1.png" alt="" />
             <div class="heroContent">
@@ -69,10 +69,10 @@
           </div>
         </div>
         <div class="heroDots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span class="dot active" onclick="slide(0)"></span>
+          <span class="dot" onclick="slide(1)"></span>
+          <span class="dot" onclick="slide(2)"></span>
+          <span class="dot" onclick="slide(3)"></span>
         </div>
       </div>
     </div>
