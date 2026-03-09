@@ -16,7 +16,7 @@
   /* font-family */
   --font: montserrat-font;
   /* borders and border-radius */
-  /* --border: 1px solid black; */
+  --border: 1px solid white;
   /* background-color and color pallete */
   --bg-color: #0f1729;
   --card-bg: #1e293b;
@@ -41,7 +41,7 @@
 
 /* main container */
 .mainContainer {
-  border: var(--border);
+  /* border: var(--border); */
   width: 100%;
   height: 100vh;
   font-family: var(--font);
@@ -50,7 +50,7 @@
 
 /* headerSection */
 .navBar {
-  border: var(--border);
+  /* border: var(--border); */
   width: 95%;
   margin: auto;
   height: 10vh;
@@ -73,7 +73,7 @@
   list-style: none;
 }
 .navItem a {
-  border: var(--border);
+  /* border: var(--border); */
   text-decoration: none;
   font-size: var(--navbar-link);
   padding: 5px 8px;
@@ -86,3 +86,75 @@
 }
 
 /* heroSection */
+.heroContainer {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  height: 400px;
+  /* border: var(--border); */
+}
+.heroSlider {
+  height: 400px;
+  overflow: hidden;
+}
+.heroSlide {
+  display: flex;
+  position: relative;
+}
+.heroContent {
+  position: absolute;
+  color: var(--text-color);
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.heroContent h1 {
+  font-size: var(--hero-title);
+}
+.heroContent h2 {
+  font-size: var(--hero-subtitle);
+}
+.heroContent p {
+  font-size: var(--hero-desc);
+}
+.heroContent button {
+  width: 50%;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  /* border: var(--border); */
+  font-size: var(--button);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.heroContent button:hover {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
+.heroSlide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.heroDots {
+  /* border: var(--border); */
+  position: absolute;
+  top: 370px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+}
+.active {
+  background-color: var(--bg-color);
+}
