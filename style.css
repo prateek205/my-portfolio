@@ -87,12 +87,12 @@
 
 /* heroSection */
 .heroContainer {
+  /* border: var(--border); */
   position: relative;
   width: 95%;
   margin: auto;
   height: 405px;
   margin-top: 1%;
-  /* border: var(--border); */
   /* border-radius: 10px; */
 }
 .heroSlider {
@@ -134,11 +134,11 @@
   font-size: var(--hero-desc);
 }
 .heroContent button {
+  /* border: var(--border); */
   width: 50%;
   padding: 10px 5px;
   border: none;
   outline: none;
-  /* border: var(--border); */
   font-size: var(--button);
   cursor: pointer;
   border-radius: 10px;
