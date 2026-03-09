@@ -16,7 +16,7 @@
   /* font-family */
   --font: montserrat-font;
   /* borders and border-radius */
-  --border: 1px solid black;
+  /* --border: 1px solid black; */
   /* background-color and color pallete */
   --bg-color: #0f1729;
   --card-bg: #1e293b;
@@ -45,6 +45,7 @@
   width: 100%;
   height: 100vh;
   font-family: var(--font);
+  background-color: var(--bg-color);
 }
 
 /* headerSection */
@@ -57,6 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--text-color);
 }
 .navLogo {
   font-size: 45px;
@@ -71,14 +73,14 @@
   list-style: none;
 }
 .navItem a {
-  /* border: 1px solid black; */
+  border: var(--border);
   text-decoration: none;
   font-size: 16px;
   padding: 5px 8px;
-  color: #000;
+  color: var(--text-color);
   transition: all 0.2s ease;
 }
 .navItem a:hover {
-  color: red;
+  color: var(--hover-color);
   font-weight: bold;
 }
