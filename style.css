@@ -90,8 +90,10 @@
   position: relative;
   width: 95%;
   margin: auto;
-  height: 400px;
+  height: 405px;
+  margin-top: 1%;
   /* border: var(--border); */
+  /* border-radius: 10px; */
 }
 .heroSlider {
   overflow: hidden;
@@ -157,8 +159,9 @@
   padding: 10px 20px;
 }
 .heroBtn .button {
+  /* border: var(--border); */
   padding: 10px 8px;
-  font-size: 26px;
+  font-size: 36px;
   background-color: transparent;
   color: var(--text-color);
   border: none;
@@ -167,7 +170,7 @@
   cursor: pointer;
 }
 .heroBtn .button:hover {
-  color: var(--bg-color);
+  color: var(--hover-color);
 }
 .heroDots {
   /* border: var(--border); */

@@ -4,6 +4,7 @@ let slide = document.getElementById("slides");
 let heroDot = document.getElementsByClassName("dot");
 let next = document.getElementById("nxt");
 let previous = document.getElementById("prev");
+let heroContainer = document.querySelector("heroContainer");
 
 let numberOfPage = 4;
 let index = 0;
@@ -35,4 +36,13 @@ function activeDot() {
 }
 next.addEventListener("click", nextBtn);
 previous.addEventListener("click", prevBtn);
-setInterval(nextBtn, 5000);
+
+let timer = setInterval(nextBtn, 4500);
+
+heroContainer.addEventListener('mouseenter',()=>{
+    clearInterval(auto)
+})
+
+heroContainer.addEventListener("mouseleave",()=>{
+    timer = setInterval(nextBtn, 4500);
+})
