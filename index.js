@@ -35,4 +35,4 @@ function activeDot() {
 }
 next.addEventListener("click", nextBtn);
 previous.addEventListener("click", prevBtn);
-setInterval(nextBtn, 4000);
+setInterval(nextBtn, 5000);
