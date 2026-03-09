@@ -61,7 +61,7 @@
   color: var(--text-color);
 }
 .navLogo {
-  font-size: 45px;
+  font-size: var(--navbar-logo);
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -75,7 +75,7 @@
 .navItem a {
   border: var(--border);
   text-decoration: none;
-  font-size: 16px;
+  font-size: var(--navbar-link);
   padding: 5px 8px;
   color: var(--text-color);
   transition: all 0.2s ease;
@@ -84,3 +84,5 @@
   color: var(--hover-color);
   font-weight: bold;
 }
+
+/* heroSection */
