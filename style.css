@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Google font family */
 @font-face {
   font-family: montserrat-font;
@@ -261,4 +265,11 @@
 .cardHeading {
   font-size: var(--hero-desc);
   font-weight: 500;
+}
+
+/* contentSection */
+.projectContainer {
+  width: 95%;
+  margin: auto;
+  margin-top: 5%;
 }
