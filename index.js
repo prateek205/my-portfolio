@@ -40,7 +40,7 @@ previous.addEventListener("click", prevBtn);
 let timer = setInterval(nextBtn, 4500);
 
 heroContainer.addEventListener('mouseenter',()=>{
-    clearInterval(auto)
+    clearInterval(heroContainer);
 })
 
 heroContainer.addEventListener("mouseleave",()=>{
