@@ -90,13 +90,12 @@
   position: relative;
   width: 95%;
   margin: auto;
-  height: 405px;
   margin-top: 1%;
   /* border-radius: 10px; */
 }
 .heroSlider {
   overflow: hidden;
-  height: 400px;
+  height: 500px;
 }
 .heroSliding {
   height: 400px;
@@ -121,7 +120,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 .heroContent h1 {
   font-size: var(--hero-title);
@@ -142,13 +141,15 @@
   border: none;
   outline: none;
   font-size: var(--button);
+  font-weight: 400;
   cursor: pointer;
   border-radius: 10px;
   transition: all 0.2s ease;
+  background: linear-gradient(45deg, hsl(210, 80%, 45%), #ffffff);
 }
 .heroContent button:hover {
   background-color: var(--hover-color);
-  color: var(--text-color);
+  font-weight: 600;
 }
 
 .heroBtn {
@@ -177,7 +178,7 @@
 .heroDots {
   /* border: var(--border); */
   position: absolute;
-  top: 370px;
+  top: 470px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -198,16 +199,39 @@
 .skillContainer {
   width: 95%;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   gap: 15px;
   color: var(--text-color);
 }
+.skillContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
 .skillTitle {
-  text-align: center;
   font-size: var(--hero-title);
   font-weight: 600;
+}
+.borderStyle {
+  width: 80%;
+  margin: auto;
+  width: 300px;
+  height: 2px;
+  border-radius: 50px;
+  background: linear-gradient(
+    to Right,
+    transparent,
+    var(--text-color),
+    var(--text-color),
+    transparent
+  );
+}
+.skillDesc {
+  font-size: var(--hero-desc);
+  font-weight: 400;
 }
 .skillCards {
   display: grid;
@@ -221,8 +245,6 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  border: var(--border);
-  box-shadow: 0px 0px 3px 1px hsl(0, 0%, 100%);
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -230,12 +252,13 @@
 }
 .card img {
   width: 100%;
-  height: 225px;
+  height: 200px;
   object-fit: contain;
 }
 .card:hover {
   transform: scale(0.95);
 }
 .cardHeading {
+  font-size: var(--hero-desc);
   font-weight: 500;
 }
