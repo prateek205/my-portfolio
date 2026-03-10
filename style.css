@@ -43,7 +43,6 @@
 .mainContainer {
   /* border: var(--border); */
   width: 100%;
-  height: 100vh;
   font-family: var(--font);
   background-color: var(--bg-color);
 }
@@ -126,12 +125,15 @@
 }
 .heroContent h1 {
   font-size: var(--hero-title);
+  font-weight: 700;
 }
 .heroContent h2 {
   font-size: var(--hero-subtitle);
+  font-weight: 500;
 }
 .heroContent p {
   font-size: var(--hero-desc);
+  font-weight: 400;
 }
 .heroContent button {
   /* border: var(--border); */
@@ -190,4 +192,50 @@
 }
 .active {
   background-color: var(--bg-color);
+}
+
+/* contentSection */
+.skillContainer {
+  width: 95%;
+  margin: auto;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--text-color);
+}
+.skillTitle {
+  text-align: center;
+  font-size: var(--hero-title);
+  font-weight: 600;
+}
+.skillCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  border: var(--border);
+  box-shadow: 0px 0px 3px 1px hsl(0, 0%, 100%);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 10px 0px;
+}
+.card img {
+  width: 100%;
+  height: 225px;
+  object-fit: contain;
+}
+.card:hover {
+  transform: scale(0.95);
+}
+.cardHeading {
+  font-weight: 500;
 }
