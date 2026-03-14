@@ -39,10 +39,10 @@ previous.addEventListener("click", prevBtn);
 
 let timer = setInterval(nextBtn, 4500);
 
-heroContainer.addEventListener('mouseenter',()=>{
+heroContainer.addEventListener('mouseover',()=>{
     clearInterval(heroContainer);
 })
 
-heroContainer.addEventListener("mouseleave",()=>{
+heroContainer.addEventListener("mouseout",()=>{
     timer = setInterval(nextBtn, 4500);
 })
