@@ -210,7 +210,8 @@ html {
   color: var(--text-color);
 }
 .skillContent,
-.projectContent {
+.projectContent,
+.aboutContent {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -303,7 +304,8 @@ html {
   color: var(--text-color);
 }
 .projectCard {
-  width: 100%;
+  width: 98%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -311,7 +313,7 @@ html {
 .proCard {
   border: var(--border);
   width: 100%;
-  height: 450px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -370,3 +372,33 @@ html {
 }
 
 /* About Section */
+.aboutContainer {
+  width: 98%;
+  margin: auto;
+  margin-top: 5%;
+  border: var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutHeading {
+  text-align: center;
+  color: var(--text-color);
+}
+.aboutDesc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px 15px;
+}
+.aboutleftSection,
+.aboutRightSection {
+  color: var(--text-color);
+}
+.aboutProImage {
+  height: 500px;
+  background-image: url("assets/IMG_6751.JPG-removebg-preview.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
