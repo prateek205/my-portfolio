@@ -38,3 +38,42 @@ next.addEventListener("click", nextBtn);
 previous.addEventListener("click", prevBtn);
 
 let timer = setInterval(nextBtn, 4500);
+
+// GSAP ANIMATION
+
+let tl = gsap.timeline();
+
+tl.from(".navLogo", {
+  // x: -80,
+  scale: 0,
+  opacity: 0,
+  duration: 0.8,
+  delay: 0.5,
+});
+
+tl.from(".navItem", {
+  y: -80,
+  // scale: 5,
+  opacity: 0,
+  duration: 0.8,
+  stagger: 0.25,
+});
+
+tl.from(".skillContent .skillTitle", {
+  x: 50,
+  opacity: 0,
+  duration: 1,
+});
+
+tl.from(".skillContent .skillDesc", {
+  x: -50,
+  opacity: 0,
+  duration: 1,
+});
+
+tl.from(".skillCards", {
+  // y: -50,
+  scale: 0,
+  opacity: 0,
+  duration: 1,
+});
