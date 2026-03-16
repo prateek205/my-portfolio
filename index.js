@@ -39,6 +39,13 @@ previous.addEventListener("click", prevBtn);
 
 // let timer = setInterval(nextBtn, 4500);
 
+let menuBar = document.getElementById("menuIcon");
+let navLink = document.getElementById("navLinks");
+
+menuBar.addEventListener("click", () => {
+  navLink.classList.toggle("active");
+});
+
 // GSAP ANIMATION
 
 let tl = gsap.timeline();
