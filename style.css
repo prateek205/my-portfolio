@@ -155,6 +155,10 @@ html {
   background-color: var(--hover-color);
   font-weight: 600;
 }
+.heroContent button a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .heroBtn {
   position: absolute;

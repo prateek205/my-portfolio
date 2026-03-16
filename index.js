@@ -37,7 +37,7 @@ function activeDot() {
 next.addEventListener("click", nextBtn);
 previous.addEventListener("click", prevBtn);
 
-let timer = setInterval(nextBtn, 4500);
+// let timer = setInterval(nextBtn, 4500);
 
 // GSAP ANIMATION
 
