@@ -517,7 +517,6 @@ html {
 .contactContainer {
   width: 98%;
   margin: auto;
-  height: 95vh;
   /* border: var(--border); */
   margin-top: 2%;
   padding: 10px 0px;
@@ -572,7 +571,6 @@ html {
 .borderStyles {
   width: 100%;
   /* margin: auto; */
-  width: 500px;
   height: 2px;
   border-radius: 50px;
   background: linear-gradient(
@@ -611,6 +609,8 @@ html {
 }
 
 .message {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -656,6 +656,22 @@ html {
   background-color: var(--hover-color);
   color: #111;
   transform: translateY(-1px);
+}
+
+@media screen and (max-width: 500px) {
+  .contContent {
+    padding: 28px 20px;
+  }
+  .conTitle h2 {
+    font-size: 22px;
+  }
+  .message {
+    width: 100%;
+  }
+  .message button {
+    width: 100%;
+    font-size: 18px;
+  }
 }
 
 /* Footer Section */
