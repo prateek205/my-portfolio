@@ -94,32 +94,6 @@ html {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  .navLists {
-    position: absolute;
-    top: 70px;
-    left: 0%;
-    width: 100%;
-    /* height: 98vh; */
-    z-index: 1;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    display: none;
-    overflow: hidden;
-    padding: 30px 0px;
-  }
-
-  .navLists.active {
-    display: flex;
-    transition: all 0.2s ease;
-  }
-
-  .menuIcon {
-    display: block;
-  }
-}
-
 /* heroSection */
 .heroContainer {
   /* border: var(--border); */
@@ -338,16 +312,6 @@ html {
 }
 .projectList button a:hover {
   color: var(--hover-color);
-}
-
-@media screen and (max-width: 768px) {
-  .projectList {
-    display: flex;
-    gap: 10px;
-  }
-  .projectList button a {
-    font-size: 16px;
-  }
 }
 .projectHeading {
   text-align: center;
@@ -658,6 +622,56 @@ html {
   transform: translateY(-1px);
 }
 
+/* Footer Section */
+.footerContainer {
+  width: 100%;
+  height: 8vh;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px;
+  color: var(--text-color);
+}
+.footHeading {
+  font-size: 16px;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .navLists {
+    position: absolute;
+    top: 70px;
+    left: 0%;
+    width: 100%;
+    /* height: 98vh; */
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    display: none;
+    overflow: hidden;
+    padding: 30px 0px;
+  }
+
+  .navLists.active {
+    display: flex;
+    transition: all 0.2s ease;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .projectList {
+    display: flex;
+    gap: 10px;
+  }
+  .projectList button a {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .contContent {
     padding: 28px 20px;
@@ -672,19 +686,4 @@ html {
     width: 100%;
     font-size: 18px;
   }
-}
-
-/* Footer Section */
-.footerContainer {
-  width: 100%;
-  height: 8vh;
-  margin-top: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0px;
-  color: var(--text-color);
-}
-.footHeading {
-  font-size: 16px;
 }
