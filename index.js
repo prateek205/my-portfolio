@@ -50,8 +50,9 @@ menuBar.addEventListener("click", () => {
 
 let tl = gsap.timeline();
 
+// Navbar Animation
+
 tl.from(".navLogo", {
-  // x: -80,
   scale: 0,
   opacity: 0,
   duration: 0.8,
@@ -59,28 +60,127 @@ tl.from(".navLogo", {
 });
 
 tl.from(".navItem", {
-  y: -80,
-  // scale: 5,
+  scale: 2,
   opacity: 0,
   duration: 0.8,
-  stagger: 0.25,
 });
 
-tl.from(".skillContent .skillTitle", {
-  x: 50,
-  opacity: 0,
-  duration: 1,
-});
+// heroSection
 
-tl.from(".skillContent .skillDesc", {
-  x: -50,
-  opacity: 0,
-  duration: 1,
-});
+tl.from(".heroContent h1", { y: -50, opacity: 0, duration: 1 })
+  .from(".heroContent h2", { y: -50, opacity: 0, duration: 1 })
+  .from(".heroContent p", { opacity: 0, duration: 1 })
+  .from(".heroContent button .herBtn", {
+    y: 50,
+    opacity: 0,
+    duration: 0.6,
+    delay: 0.5,
+  })
+  .from(".heroBtn", {
+    scale: 2,
+    opacity: 0,
+    duration: 0.6,
+    delay: 0.5,
+  });
+// Skill Card Animation
 
-tl.from(".skillCards", {
-  // y: -50,
+gsap.from("#skillCrd", {
   scale: 0,
   opacity: 0,
-  duration: 1,
+  scrollTrigger: {
+    trigger: "#skillCrd",
+    scroller: "body",
+    // markers: true,
+    scrub: true,
+  },
 });
+
+gsap.from("#Skills #skillCont h1", {
+  scale: 0,
+  duration: 2,
+  x: 200,
+  scrollTrigger: {
+    trigger: "#Skills #skillCont",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "top 60%",
+    scrub: true,
+  },
+});
+
+gsap.from("#Skills #skillCont p", {
+  scale: 0,
+  // delay: 1,
+  duration: 2,
+  x: -200,
+  scrollTrigger: {
+    trigger: "#Skills #skillCont",
+    scroller: "body",
+    // markers: true,
+    start: "top 80%",
+    end: "top 60%",
+    scrub: true,
+  },
+});
+
+// Project Animation
+
+gsap.from("#Projects #pro", {
+  scale: 2,
+  duration: 2,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#Projects #pro h1",
+    scroller: "body",
+    // markers: true,
+    scrub: true,
+  },
+});
+
+gsap.from("#Projects #pro1", {
+  x: -100,
+  duration: 2,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#pro1",
+    scroller: "body",
+    // markers: true,
+    scrub: true,
+  },
+});
+gsap.from("#Projects #pro4", {
+  x: 100,
+  duration: 2,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#pro1",
+    scroller: "body",
+    // markers: true,
+    scrub: true,
+  },
+});
+gsap.from("#Projects #pro2", {
+  scale: 0,
+  duration: 2,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#pro1",
+    scroller: "body",
+    // markers: true,
+    scrub: true,
+  },
+});
+gsap.from("#Projects #pro3", {
+  scale: 0,
+  duration: 1,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#pro1",
+    scroller: "body",
+    // markers: true,
+    scrub: true,
+  },
+});
+
+// About Animation
