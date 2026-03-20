@@ -638,6 +638,20 @@ html {
 }
 
 /* Media Query */
+@media screen and (max-width: 1024px) {
+  .aboutDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navLists {
     position: absolute;
@@ -669,6 +683,12 @@ html {
   }
   .projectList button a {
     font-size: 16px;
+  }
+
+  .aboutDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 
