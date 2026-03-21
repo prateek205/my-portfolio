@@ -50,21 +50,6 @@ menuBar.addEventListener("click", () => {
 
 let tl = gsap.timeline();
 
-// Navbar Animation
-
-tl.from(".navLogo", {
-  scale: 0,
-  opacity: 0,
-  duration: 0.8,
-  delay: 0.5,
-});
-
-tl.from(".navItem", {
-  scale: 2,
-  opacity: 0,
-  duration: 0.8,
-});
-
 // heroSection
 
 tl.from(".heroContent h1", { y: -50, opacity: 0, duration: 1 })
@@ -96,9 +81,9 @@ gsap.from("#skillCrd", {
 });
 
 gsap.from("#Skills #skillCont h1", {
-  scale: 0,
+  scale: 2,
+  opacity: 0,
   duration: 2,
-  x: 200,
   scrollTrigger: {
     trigger: "#Skills #skillCont",
     scroller: "body",
@@ -110,10 +95,10 @@ gsap.from("#Skills #skillCont h1", {
 });
 
 gsap.from("#Skills #skillCont p", {
-  scale: 0,
+  scale: 2,
+  opacity:0,
   // delay: 1,
   duration: 2,
-  x: -200,
   scrollTrigger: {
     trigger: "#Skills #skillCont",
     scroller: "body",
