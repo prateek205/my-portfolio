@@ -96,7 +96,7 @@ gsap.from("#Skills #skillCont h1", {
 
 gsap.from("#Skills #skillCont p", {
   scale: 2,
-  opacity:0,
+  opacity: 0,
   // delay: 1,
   duration: 2,
   scrollTrigger: {
@@ -169,3 +169,40 @@ gsap.from("#Projects #pro3", {
 });
 
 // About Animation
+gsap.from("#About #leftSection", {
+  scale: 0,
+  duration: 2,
+  delay: 0.6,
+  scrollTrigger: {
+    trigger: "#leftSection",
+    scroller: "body",
+    scrub: true,
+  },
+});
+gsap.from("#About #rightSection", {
+  scale: 1,
+  duration: 2,
+  opacity: 0,
+  scrollTrigger: {
+    trigger: "#rightSection",
+    scroller: "body",
+    scrub: true,
+  },
+});
+gsap.from("#About #intro", {
+  x: -100,
+  opacity: 0,
+  duration: 2,
+  delay: 1,
+});
+
+gsap.from("#Contact #conContact #conContLeft", {
+  scale: 0,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#Contact",
+    scroller: "body",
+    scrub: true,
+  },
+});
